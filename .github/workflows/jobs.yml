@@ -1,0 +1,14 @@
+name: Jobs Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository Ready
+        run: echo "Jobs workflow is working!"
